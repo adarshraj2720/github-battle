@@ -19,7 +19,7 @@ function Language() {
             .then((lang) => setdata(lang.items))
     }, [value])
 
-    function handleclick(ele){
+    function handleclick(ele) {
         setvalue(ele)
     }
 
@@ -39,8 +39,8 @@ function Language() {
                 }
             </div>
             {
-                data.length === 0 ?(
-                <h2>Fetching....</h2>
+                data.length === 0 ? (
+                    <h2>Fetching....</h2>
                 )
                     : (
                         <div className="alllang">
